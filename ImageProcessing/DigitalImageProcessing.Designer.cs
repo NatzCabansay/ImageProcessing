@@ -46,10 +46,6 @@
             nspContrast = new NumericUpDown();
             btnContrastAdjust = new Button();
             lblContrast = new Label();
-            gbxRotation = new GroupBox();
-            btnReset = new Button();
-            nspRotate = new NumericUpDown();
-            lblRotate = new Label();
             gbxReflection = new GroupBox();
             btnReflectV = new Button();
             btnReflectH = new Button();
@@ -84,8 +80,6 @@
             ((System.ComponentModel.ISupportInitialize)nspBrightness).BeginInit();
             gbxContrast.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)nspContrast).BeginInit();
-            gbxRotation.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)nspRotate).BeginInit();
             gbxReflection.SuspendLayout();
             pnlBefore.SuspendLayout();
             pnlAfter.SuspendLayout();
@@ -162,7 +156,6 @@
             tlpPictures.Controls.Add(picProcessed, 1, 2);
             tlpPictures.Controls.Add(gbxBrightness, 1, 0);
             tlpPictures.Controls.Add(gbxContrast, 0, 0);
-            tlpPictures.Controls.Add(gbxRotation, 0, 1);
             tlpPictures.Controls.Add(gbxReflection, 1, 1);
             tlpPictures.Controls.Add(pnlBefore, 0, 3);
             tlpPictures.Controls.Add(pnlAfter, 1, 3);
@@ -287,52 +280,6 @@
             lblContrast.Size = new Size(141, 21);
             lblContrast.TabIndex = 0;
             lblContrast.Text = "Contrast (0 to 100)";
-            // 
-            // gbxRotation
-            // 
-            gbxRotation.Controls.Add(btnReset);
-            gbxRotation.Controls.Add(nspRotate);
-            gbxRotation.Controls.Add(lblRotate);
-            gbxRotation.Dock = DockStyle.Fill;
-            gbxRotation.Location = new Point(10, 53);
-            gbxRotation.Margin = new Padding(10, 3, 10, 3);
-            gbxRotation.Name = "gbxRotation";
-            gbxRotation.Size = new Size(640, 44);
-            gbxRotation.TabIndex = 6;
-            gbxRotation.TabStop = false;
-            gbxRotation.Text = "Rotation";
-            // 
-            // btnReset
-            // 
-            btnReset.Dock = DockStyle.Right;
-            btnReset.Location = new Point(562, 19);
-            btnReset.Name = "btnReset";
-            btnReset.Size = new Size(75, 22);
-            btnReset.TabIndex = 2;
-            btnReset.Text = "Reset";
-            btnReset.UseVisualStyleBackColor = true;
-            // 
-            // nspRotate
-            // 
-            nspRotate.Dock = DockStyle.Left;
-            nspRotate.Location = new Point(240, 19);
-            nspRotate.Margin = new Padding(15, 3, 3, 3);
-            nspRotate.Maximum = new decimal(new int[] { 180, 0, 0, 0 });
-            nspRotate.Minimum = new decimal(new int[] { 180, 0, 0, int.MinValue });
-            nspRotate.Name = "nspRotate";
-            nspRotate.Size = new Size(75, 23);
-            nspRotate.TabIndex = 1;
-            // 
-            // lblRotate
-            // 
-            lblRotate.AutoSize = true;
-            lblRotate.Dock = DockStyle.Left;
-            lblRotate.Font = new Font("Segoe UI", 10F);
-            lblRotate.Location = new Point(3, 19);
-            lblRotate.Name = "lblRotate";
-            lblRotate.Size = new Size(237, 19);
-            lblRotate.TabIndex = 0;
-            lblRotate.Text = "Rotate (-180° to 180°, + = clockwise)";
             // 
             // gbxReflection
             // 
@@ -626,9 +573,6 @@
             gbxContrast.ResumeLayout(false);
             gbxContrast.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)nspContrast).EndInit();
-            gbxRotation.ResumeLayout(false);
-            gbxRotation.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)nspRotate).EndInit();
             gbxReflection.ResumeLayout(false);
             pnlBefore.ResumeLayout(false);
             pnlAfter.ResumeLayout(false);
@@ -663,10 +607,6 @@
         private NumericUpDown nspContrast;
         private Button btnContrastAdjust;
         private Label lblContrast;
-        private GroupBox gbxRotation;
-        private Button btnReset;
-        private NumericUpDown nspRotate;
-        private Label lblRotate;
         private GroupBox gbxReflection;
         private Button btnReflectV;
         private Button btnReflectH;

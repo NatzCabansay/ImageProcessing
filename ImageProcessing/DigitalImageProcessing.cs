@@ -223,11 +223,6 @@ namespace ImageProcessing
             picProcessed.Image = processed;
         }
 
-        private void btnReset_Click(object sender, EventArgs e)
-        {
-            nspRotate.Value = 0;
-        }
-
         private void btnBackground_Click(object sender, EventArgs e)
         {
             openFileDialog2.ShowDialog();
